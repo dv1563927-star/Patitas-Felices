@@ -1,0 +1,57 @@
+
+#labor{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#titulo{
+    text-align: center;
+   
+}
+
+#testimonio{
+    display: flex;
+}
+
+.imgtestimonios{
+    width: 500px;
+    padding: 20px;
+    margin: 30px 150px;
+    background-color: black;
+}
+
+#txttestimonios{
+    text-align: center;
+    padding: 150px 0 200px 0;
+    
+}
+
+
+.carrusel{
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    overflow: hidden; 
+
+}
+.slides{
+    display: flex;
+    width: 800%; 
+    animation: cambio 36s linear infinite;
+}
+
+.slides img{
+    max-width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+@keyframes cambio {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
