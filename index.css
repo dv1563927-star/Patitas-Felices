@@ -1,9 +1,3 @@
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
   /* ── Colores principales ── */
   --color-primario:       #4A7FA5;   /* azul del escudo — nav, botones, headers */
@@ -43,3 +37,67 @@
   --sombra-tarjeta:       0 2px 12px rgba(61, 43, 31, 0.08);
   --sombra-hover:         0 6px 20px rgba(61, 43, 31, 0.15);
 }
+
+
+/* estilos del body */
+body{
+    font-family: var(--fuente-cuerpo);
+    background-color: var(--fondo-pagina);
+    color: var(--texto-principal);
+}
+
+/* estilos generales de seccion*/
+section {
+    background-color: var(--fondo-suave);
+    margin: 24px auto;
+    padding: 32px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: var(--sombra-tarjeta);
+}
+
+/* estilos del nav*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-primario);
+  padding: 0 32px;
+  height: 64px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+nav ul a {
+  color: var(--fondo-suave);
+  text-decoration: none;
+}
+
+nav h1{
+    font-family: var(--fuente-titulo);
+    color: var(--texto-secundario);
+}
+
+/* estilos del home*/
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 80px;
+    height: 800px;
+    margin: 20px;
+    max-width: 100%;
+    border-radius: 6px;
+}
+
+#eslogan {
+    font-family: var(--fuente-cuerpo);
+    color: var(--texto-secundario);
+    margin: 80px;
+    text-align: center;
+}
+
