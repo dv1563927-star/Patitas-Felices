@@ -1,4 +1,6 @@
 
+/* CSS de la section nosotros */
+
 #labor{
     margin-top: 40px;
     text-align: center;
@@ -55,3 +57,43 @@
         transform: translateX(-50%);
     }
 }
+
+
+
+
+
+#titulomision{
+    text-align: center;
+    margin: 24px;
+}
+
+#imgmision{
+    width: 500px;
+    padding: 20px;
+    margin: 30px 150px;
+    background-color: black;
+}
+
+#txtmision{
+    text-align: center;
+    padding: 190px 10px;
+}
+
+
+
+
+#txtvision{
+     text-align: center;
+    padding: 120px 10px;
+    margin: 140px;
+}
+
+
+#imgvision{
+    width: 500px;
+    padding: 20px;
+    margin: 30px 120px;
+    background-color: black;
+
+}
+
