@@ -43,3 +43,82 @@
   --sombra-tarjeta:       0 2px 12px rgba(61, 43, 31, 0.08);
   --sombra-hover:         0 6px 20px rgba(61, 43, 31, 0.15);
 }
+
+/* ═══════════════════════════════════════ */
+/* MEDIA QUERIES - RESPONSIVE */
+/* ═══════════════════════════════════════ */
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  nav {
+    padding: 0 16px;
+    height: 56px;
+  }
+
+  nav h1 {
+    font-size: 18px;
+  }
+
+  nav ul {
+    gap: 12px;
+  }
+
+  nav ul a {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 24px;
+    margin: 16px auto;
+  }
+
+  .footer-contenedor {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .footer-info {
+    font-size: 14px;
+  }
+}
+
+/* Móviles (max-width: 600px) */
+@media (max-width: 600px) {
+  nav {
+    padding: 0 12px;
+    height: 48px;
+    flex-wrap: wrap;
+  }
+
+  nav h1 {
+    font-size: 14px;
+  }
+
+  nav ul {
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  nav ul a {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  section {
+    padding: 16px;
+    margin: 12px auto;
+    max-width: 95%;
+  }
+
+  .footer-contenedor {
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .footer-info {
+    font-size: 12px;
+  }
+}

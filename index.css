@@ -146,3 +146,63 @@ nav h1{
   font-family: var(--fuente-cuerpo);
   font-size: 18px;
 }
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  #home {
+    padding: 0 40px;
+    height: auto;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  #home img {
+    width: 300px;
+  }
+
+  #eslogan {
+    margin: 40px;
+    font-size: 18px;
+  }
+
+  #titulo-home {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-bottom: 20px;
+  }
+}
+
+/* Móviles (max-width: 600px) */
+@media (max-width: 600px) {
+  #home {
+    padding: 0 16px;
+    height: auto;
+    flex-direction: column;
+    gap: 20px;
+    margin: 10px;
+  }
+
+  #home img {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  #eslogan {
+    margin: 20px;
+    font-size: 14px;
+  }
+
+  #eslogan h2 {
+    font-size: 14px;
+  }
+
+  #titulo-home {
+    position: static;
+    transform: none;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+}
