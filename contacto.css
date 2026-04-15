@@ -94,11 +94,11 @@ nav {
     width: 390px;
     padding: 20px;
     background-color: black;
+    transition: 0.3s;
 }
 
 #imgcontacto:hover{
     transform: scale(1.1);
-    transition: 0.3s;
 }
 
 
@@ -167,3 +167,37 @@ nav {
     transform: scale(1.1);
 }
 
+select {
+  font-family: var(--fuente-cuerpo);
+  font-size: 13px;
+  padding: 0.5rem;
+  border: 1px solid var(--borde-color);
+  border-radius: var(--borde-radius-sm);
+  background-color: var(--fondo-tarjeta);
+  color: var(--texto-principal);
+  width: 260px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+select:hover {
+  background-color: var(--fondo-suave);
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+/* estilos del footer*/
+.footer-contenedor{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primario);
+  padding: 6px 22px;
+
+}
+
+.footer-info{
+  color: var(--fondo-suave);
+  font-family: var(--fuente-cuerpo);
+  font-size: 18px;
+}
