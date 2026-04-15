@@ -1,0 +1,258 @@
+:root {
+  /* ── Colores principales ── */
+  --color-primario:       #4A7FA5;   /* azul del escudo — nav, botones, headers */
+  --color-primario-dark:  #2E5F80;   /* azul más oscuro — hover de botones */
+  --color-secundario:     #C8892A;   /* dorado — acentos, íconos, detalles */
+  --color-secundario-dark:#A06B18;   /* dorado oscuro — hover de acentos */
+  --color-acento:         #D94F4F;   /* rojo coral — badges, alertas, favoritos */
+
+  /* ── Fondos ── */
+  --fondo-pagina:         #EDEAE3;   /* gris claro — fondo general de la página */
+  --fondo-tarjeta:        #FFFFFF;   /* blanco — tarjetas, formularios */
+  --fondo-suave:          #F0E6C8;   /* beige/crema — secciones alternadas */
+
+  /* ── Texto ── */
+  --texto-principal:      #3D2B1F;   /* café oscuro — párrafos y texto general */
+  --texto-secundario:     #6B5744;   /* café medio — subtítulos, labels */
+  --texto-claro:          #FFFFFF;   /* blanco — texto sobre fondos oscuros */
+  --texto-muted:          #9E8878;   /* café claro — placeholders, hints */
+
+  /* ── Bordes ── */
+  --borde-color:          #D6C9B5;   /* beige grisáceo — bordes de tarjetas */
+  --borde-radius:         12px;      /* redondez estándar de tarjetas */
+  --borde-radius-sm:      6px;       /* redondez de botones y badges */
+
+  /* ── Tipografía ── */
+  --fuente-titulo:        'Georgia', serif;       /* títulos y nombres */
+  --fuente-cuerpo:        'DM Sans', sans-serif;  /* párrafos y UI */
+  --fuente-base:          16px;
+
+  /* ── Espaciado ── */
+  --espaciado-sm:         8px;
+  --espaciado-md:         16px;
+  --espaciado-lg:         32px;
+  --espaciado-xl:         64px;
+
+  /* ── Sombras ── */
+  --sombra-tarjeta:       0 2px 12px rgba(61, 43, 31, 0.08);
+  --sombra-hover:         0 6px 20px rgba(61, 43, 31, 0.15);
+}
+
+/* estilos del body */
+body{
+    font-family: var(--fuente-cuerpo);
+    background-color: var(--fondo-pagina);
+    color: var(--texto-principal);
+}
+
+/* estilos generales de seccion*/
+section {
+    background-color: var(--fondo-suave);
+    margin: 24px auto;
+    padding: 32px;
+    max-width: 90%;
+    border-radius: 8px;
+    box-shadow: var(--sombra-tarjeta);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+/* estilo del boton para perfiles*/
+.btn-perfil{
+  margin: 10px 10px 10px 30px;
+  padding: 8px 10px;
+  text-align: center;
+  background-color: var(--color-primario);
+  color: var(--texto-claro);
+  border-radius: var(--borde-radius-sm);
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn-perfil:hover{
+  background-color: var(--color-primario-dark);
+  transform: scale(1.05);
+}
+
+/* estilo del boton para adoptar */
+.btn-adoptar{
+  margin-top: 12px;
+  padding: 10px 16px;
+  text-align: center;
+  background-color: var(--color-secundario);
+  color: var(--texto-claro);
+  border-radius: var(--borde-radius-sm);
+  text-decoration: none;
+  font-size: 15px;
+  transition: 0.3s;
+  display: inline-block;
+  font-weight: 600;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.btn-adoptar:hover{
+  background-color: var(--color-secundario-dark);
+  transform: scale(1.05);
+}
+
+/* estilos de la info*/
+#mascota-info {
+  display: flex;
+  flex-direction: column;
+}
+
+#nombre-mascota {
+  font-family: var(--fuente-titulo);
+  color: var(--texto-secundario);
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+/* que la info ocupe el espacio disponible */
+#mascota-info {
+  flex: 1;
+}
+
+/* estilos textos*/
+.subtitulos {
+  margin-top: 16px;
+  margin-bottom: 4px;
+}
+
+.parrafos {
+  margin: 0;
+}
+
+/* estilos de la foto*/
+#mascota-foto img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: var(--borde-radius);
+  box-shadow: var(--sombra-tarjeta);
+}
+
+#mascota-foto {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+
+/* estilos del footer*/
+.footer-contenedor{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primario);
+  padding: 6px 22px;
+  margin-top: 244px
+}
+
+.footer-info{
+  color: var(--fondo-suave);
+  font-family: var(--fuente-cuerpo);
+  font-size: 18px;
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  section {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px;
+  }
+
+  #nombre-mascota {
+    font-size: 24px;
+  }
+
+  #mascota-foto {
+    width: 100%;
+    align-items: center;
+  }
+
+  #mascota-foto img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .btn-perfil {
+    margin: 10px auto;
+  }
+}
+
+/* Móviles (max-width: 600px) */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+    margin: 12px auto;
+    max-width: 95%;
+  }
+
+  #nombre-mascota {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  #mascota-info {
+    gap: 8px;
+  }
+
+  .subtitulos {
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+
+  .parrafos {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  #mascota-foto {
+    width: 100%;
+    align-items: center;
+  }
+
+  #mascota-foto img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    aspect-ratio: 1;
+  }
+
+  .btn-perfil {
+    margin: 8px auto;
+    padding: 8px 12px;
+    font-size: 12px;
+    width: auto;
+  }
+
+  .btn-adoptar {
+    margin-top: 12px;
+    padding: 10px 12px;
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .footer-contenedor {
+    margin-top: 20px;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .footer-info {
+    font-size: 12px;
+  }
+}
