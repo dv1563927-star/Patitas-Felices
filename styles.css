@@ -1,5 +1,3 @@
-
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -45,3 +43,4 @@
   --sombra-tarjeta:       0 2px 12px rgba(61, 43, 31, 0.08);
   --sombra-hover:         0 6px 20px rgba(61, 43, 31, 0.15);
 }
+
