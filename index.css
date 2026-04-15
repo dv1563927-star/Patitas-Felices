@@ -132,3 +132,17 @@ nav h1{
   text-align: center;
 }
 
+/* estilos del footer*/
+.footer-contenedor{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-primario);
+  padding: 6px 22px;
+  
+}
+
+.footer-info{
+  color: var(--fondo-suave);
+  font-family: var(--fuente-cuerpo);
+  font-size: 18px;
+}
