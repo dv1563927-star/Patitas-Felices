@@ -135,11 +135,12 @@ nav {
     padding: 20px;
     margin: 70px 60px;
     background-color: black;
+    transition: 0.3s;
 }
 
 .imgtestimonios:hover{
     transform: scale(1.1);
-    transition: 0.3s;
+   
 }
 
 
