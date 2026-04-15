@@ -186,18 +186,134 @@ select:hover {
   transition: 0.3s;
 }
 
-
 /* estilos del footer*/
 .footer-contenedor{
   display: flex;
   justify-content: space-between;
   background-color: var(--color-primario);
   padding: 6px 22px;
-
+  
 }
 
 .footer-info{
   color: var(--fondo-suave);
   font-family: var(--fuente-cuerpo);
   font-size: 18px;
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  #titlecontacto {
+    font-size: 20px;
+  }
+
+  #formulario {
+    flex-direction: column;
+    margin: 30px;
+    padding: 20px;
+  }
+
+  #Contacto {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  #Registro {
+    font-size: 18px;
+    margin: 20px;
+  }
+
+  #imgcontacto {
+    width: 250px;
+    padding: 15px;
+  }
+
+  .cuadros {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  select {
+    width: 200px;
+    font-size: 12px;
+  }
+
+  #BotonEnviar {
+    width: 200px;
+    font-size: 12px;
+  }
+}
+
+/* Móviles (max-width: 600px) */
+@media (max-width: 600px) {
+  #contacto {
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  #titlecontacto {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  #formulario {
+    flex-direction: column;
+    margin: 15px;
+    padding: 15px;
+    background-color: var(--fondo-suave);
+  }
+
+  #Contacto {
+    font-size: 14px;
+    margin: 10px;
+    display: none;
+  }
+
+  #imgcontacto {
+    width: 100%;
+    max-width: 200px;
+    padding: 10px;
+    margin: 0 auto 20px;
+  }
+
+  #Registro {
+    font-size: 14px;
+    margin: 10px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .label h3 {
+    font-size: 13px;
+    margin: 8px 0 4px 0;
+  }
+
+  .cuadros {
+    width: 100%;
+    max-width: 280px;
+    font-size: 13px;
+    padding: 8px;
+    margin: 5px 0;
+  }
+
+  select {
+    width: 100%;
+    max-width: 280px;
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  #BotonEnviar {
+    width: 100%;
+    max-width: 280px;
+    font-size: 12px;
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  #contacto h3 {
+    font-size: 13px;
+  }
 }

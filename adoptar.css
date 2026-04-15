@@ -219,3 +219,89 @@ section {
   font-family: var(--fuente-cuerpo);
   font-size: 18px;
 }
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .grid-animales1 {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10%;
+    gap: 8px;
+  }
+
+  #manchas-foto {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .grid-animales2 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 20px;
+  }
+
+  .tarjeta-animal img {
+    height: 150px;
+  }
+
+  .tarjeta-info {
+    padding: 12px;
+  }
+}
+
+/* Móviles (max-width: 600px) */
+@media (max-width: 600px) {
+  h2 {
+    font-size: 16px;
+  }
+
+  .grid-animales1 {
+    grid-template-columns: 1fr;
+    margin: 0;
+    gap: 8px;
+  }
+
+  #manchas-foto {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  #adoptar img {
+    margin: 8px;
+  }
+
+  .grid-animales2 {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .tarjeta-animal {
+    width: 100%;
+  }
+
+  .tarjeta-animal img {
+    height: 150px;
+  }
+
+  .tarjeta-info {
+    padding: 12px;
+    gap: 4px;
+  }
+
+  .tarjeta-info h3 {
+    font-size: 14px;
+  }
+
+  .tarjeta-info p {
+    font-size: 12px;
+  }
+
+  .btn-perfil {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+}
