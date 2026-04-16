@@ -126,8 +126,10 @@ nav {
 
 #Registro{
     font-size: 25px;
-    margin: 50px 400px;
-    
+    margin: 50px 300px;
+    background-color: #1e587f;
+    padding: 25px;
+    border-radius: 8px;
 }
 
 .cuadros{
