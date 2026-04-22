@@ -188,19 +188,28 @@ select:hover {
   transition: 0.3s;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6b8fa6beeb7af7f1851a726cf172cf3786d8fe0a
 /* estilos del footer*/
 .footer-contenedor{
   display: flex;
   justify-content: space-between;
   background-color: var(--color-primario);
   padding: 6px 22px;
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 6b8fa6beeb7af7f1851a726cf172cf3786d8fe0a
 }
 
 .footer-info{
   color: var(--fondo-suave);
   font-family: var(--fuente-cuerpo);
   font-size: 18px;
+<<<<<<< HEAD
 }
 
 /* Tablets (max-width: 1024px) */
@@ -319,3 +328,6 @@ select:hover {
     font-size: 13px;
   }
 }
+=======
+}
+>>>>>>> 6b8fa6beeb7af7f1851a726cf172cf3786d8fe0a
