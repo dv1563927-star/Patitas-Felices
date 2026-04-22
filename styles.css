@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 9c7f083ab30360eef1bcd9b419d2a5a56d198975
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -47,8 +42,6 @@
   /* ── Sombras ── */
   --sombra-tarjeta:       0 2px 12px rgba(61, 43, 31, 0.08);
   --sombra-hover:         0 6px 20px rgba(61, 43, 31, 0.15);
-<<<<<<< HEAD
-=======
 }
 
 /* ═══════════════════════════════════════ */
@@ -128,5 +121,4 @@
   .footer-info {
     font-size: 12px;
   }
->>>>>>> 9c7f083ab30360eef1bcd9b419d2a5a56d198975
 }

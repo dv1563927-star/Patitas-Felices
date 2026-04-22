@@ -94,18 +94,11 @@ nav {
     width: 390px;
     padding: 20px;
     background-color: black;
-<<<<<<< HEAD
-=======
     transition: 0.3s;
->>>>>>> 9c7f083ab30360eef1bcd9b419d2a5a56d198975
 }
 
 #imgcontacto:hover{
     transform: scale(1.1);
-<<<<<<< HEAD
-    transition: 0.3s;
-=======
->>>>>>> 9c7f083ab30360eef1bcd9b419d2a5a56d198975
 }
 
 
@@ -176,8 +169,6 @@ nav {
     transform: scale(1.1);
 }
 
-<<<<<<< HEAD
-=======
 select {
   font-family: var(--fuente-cuerpo);
   font-size: 13px;
@@ -328,4 +319,3 @@ select:hover {
     font-size: 13px;
   }
 }
->>>>>>> 9c7f083ab30360eef1bcd9b419d2a5a56d198975
